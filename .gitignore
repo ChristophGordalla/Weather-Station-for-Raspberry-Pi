@@ -1,0 +1,11 @@
+data/*
+data_bak/*
+images/*
+logs/*
+misc/*
+__pycache__/*
+
+*.sh
+*.txt
+
+config_mail.py
