@@ -23,6 +23,7 @@ IMAGE_FORMAT_WEB = 'svg'
 IMAGE_FORMAT_MAIL = 'pdf'
 # file prefixed
 PREFIX_24H = '24h'
+PREFIX_48H = '48h'
 PREFIX_7D = '7d'
 PREFIX_31D = '31d'
 PREFIX_365D = '365d'
@@ -39,25 +40,31 @@ XLABEL_MONTH = ''
 # time between two measurements in seconds
 TIME_DATA = 15*60
 # maximum time span between first and last
-# times for FILE 24H in seconds
+# times for 24 hours plots in seconds
 TIME_DAY = 24*60*60
 TIME_MINOR_TICKS_DAY = 15*60
 TIME_MAJOR_TICKS_DAY = 60*60
 TIME_MAJOR_TICK_LABELS_DAY = 2*60*60    
 # maximum time span between first and last
-# times for FILE_7D in seconds
+# times for 48 hours plots in seconds
+TIME_2DAYS = 2*TIME_DAY
+TIME_MINOR_TICKS_2DAYS = 30*60
+TIME_MAJOR_TICKS_2DAYS = 2*60*60
+TIME_MAJOR_TICK_LABELS_2DAYS = 4*60*60    
+# maximum time span between first and last
+# times for 7 days plots in seconds
 TIME_WEEK = 7*TIME_DAY
 TIME_MINOR_TICKS_WEEK = 6*60*60
 TIME_MAJOR_TICKS_WEEK = 12*60*60
 TIME_MAJOR_TICK_LABELS_WEEK = 24*60*60    
 # maximum time span between first and last
-# times for FILE_31D in seconds
+# times for 31 days plots in seconds
 TIME_MONTH = 31*TIME_DAY
 TIME_MINOR_TICKS_MONTH = TIME_DAY
 TIME_MAJOR_TICKS_MONTH = 7*TIME_DAY
 TIME_MAJOR_TICK_LABELS_MONTH = 7*TIME_DAY
 # maximum time span between first and last
-# times for FILE_365D in seconds
+# times for 365 days plots in seconds
 TIME_YEAR = 365*TIME_DAY
 TIME_MINOR_TICKS_YEAR = TIME_WEEK
 TIME_MAJOR_TICKS_YEAR = 4*TIME_WEEK
@@ -68,6 +75,12 @@ PARAMETERS_DAY = [XLABEL_DAY,
                   TIME_MINOR_TICKS_DAY,
                   TIME_MAJOR_TICKS_DAY,
                   TIME_MAJOR_TICK_LABELS_DAY]
+
+PARAMETERS_2DAYS = [XLABEL_DAY,
+                    TIME_2DAYS,
+                    TIME_MINOR_TICKS_2DAYS,
+                    TIME_MAJOR_TICKS_2DAYS,
+                    TIME_MAJOR_TICK_LABELS_2DAYS]
 
 PARAMETERS_WEEK = [XLABEL_WEEK,
                    TIME_WEEK,
